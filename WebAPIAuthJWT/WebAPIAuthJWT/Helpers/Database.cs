@@ -14,7 +14,7 @@ namespace WebAPIAuthJWT.Helpers
 {
     public class Database
     {
-        string fileDB = @"D:\GitHub\5G\WebAPIAuthJWT\WebAPIAuthJWT\DB\Tornei.db";
+        string fileDB = System.IO.Directory.GetCurrentDirectory() + @"\DB\Tornei.db";
         string strConn;
 
         // parametri token JWT
