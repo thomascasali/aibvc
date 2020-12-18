@@ -14,12 +14,12 @@ namespace WebAPIAuthJWT.Helpers
 {
     public class Database
     {
-        string fileDB = System.IO.Directory.GetCurrentDirectory() + @"\DB\Tornei.db";
+        string fileDB = System.IO.Directory.GetCurrentDirectory() + @"\" + ConfigurationManager.AppSetting["AppSettings:DB_SQLite"];
         string strConn;
 
         // parametri token JWT
-        string JWT_secretKey = "dVQ!VdB6iEvu23^Onyp$a480";
-        int JWT_expirationMinutes = 20;
+        string JWT_secretKey = ConfigurationManager.AppSetting["AppSettings:Secret"];
+        int JWT_expirationMinutes = Convert.ToInt32(ConfigurationManager.AppSetting["AppSettings:ExpirationMinute"]);
 
         public Database()
         {
