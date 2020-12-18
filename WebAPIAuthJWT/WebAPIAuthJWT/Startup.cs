@@ -14,6 +14,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
+using Swashbuckle.AspNetCore.Swagger;
 using WebAPIAuthJWT.Helpers;
 
 namespace WebAPIAuthJWT
@@ -31,6 +32,8 @@ namespace WebAPIAuthJWT
         // For more information on how to configure your application, visit https://go.microsoft.com/fwlink/?LinkID=398940
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddSwaggerDocumentation();
+
             services.AddControllers()
                 .AddNewtonsoftJson(x => x.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore);
 
@@ -73,6 +76,7 @@ namespace WebAPIAuthJWT
         {
             if (env.IsDevelopment())
             {
+                app.UseSwaggerDocumentation();
                 app.UseDeveloperExceptionPage();
             }
 
@@ -92,6 +96,9 @@ namespace WebAPIAuthJWT
             {
                 endpoints.MapControllers();
             });
+
         }
     }
+
+
 }
