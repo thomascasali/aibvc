@@ -14,7 +14,7 @@ namespace WebAPIAuthJWT.Helpers
 {
     public class Database
     {
-        string fileDB = @"D:\Appl\Scuola\AS_2020_2021\GitHub\AS2021_5G_INF\WebAPIAuthJWT\WebAPIAuthJWT\DB\Tornei.db";
+        string fileDB = @"D:\GitHub\5G\WebAPIAuthJWT\WebAPIAuthJWT\DB\Tornei.db";
         string strConn;
 
         // parametri token JWT
