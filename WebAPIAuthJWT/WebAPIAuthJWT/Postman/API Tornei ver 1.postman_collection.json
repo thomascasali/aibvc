@@ -1,0 +1,258 @@
+{
+	"info": {
+		"_postman_id": "12e8934a-e2b4-48e2-a8e0-3e58b112d3b6",
+		"name": "API Tornei ver 1",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "User Auth filippo.albertini",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"Username\":\"filippo.albertini\",\r\n    \"Password\":\"65Test12\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:52288/api/v1/user/auth",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "52288",
+					"path": [
+						"api",
+						"v1",
+						"user",
+						"auth"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "User Auth thomas.casali",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"Username\":\"thomas.casali\",\r\n    \"Password\":\"386js8l\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:52288/api/v1/user/auth",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "52288",
+					"path": [
+						"api",
+						"v1",
+						"user",
+						"auth"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "User Inserisci utente filippo.albertini",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"Username\":\"filippo.albertini\",\r\n    \"Password\":\"65Test12\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:52288/api/v1/user/inserisci",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "52288",
+					"path": [
+						"api",
+						"v1",
+						"user",
+						"inserisci"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "User Inserisci utente thomas.casali",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"Username\":\"thomas.casali\",\r\n    \"Password\":\"386js8l\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:52288/api/v1/user/inserisci",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "52288",
+					"path": [
+						"api",
+						"v1",
+						"user",
+						"inserisci"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "User Get all utenti",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:52288/api/v1/user/all",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "52288",
+					"path": [
+						"api",
+						"v1",
+						"user",
+						"all"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Atleti cerca atleta",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6ImZpbGlwcG8uYWxiZXJ0aW5pIiwicm9sZSI6IlVTRVIiLCJuYmYiOjE2MDgwNzA4MzQsImV4cCI6MTYwODA3MjAzNCwiaWF0IjoxNjA4MDcwODM0fQ.MlbF5Zbw2N9X8IrACb28Rtrk-0hATlVRifJv7LYE-fw",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:52288/api/v1/atleti/cerca/codice/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "52288",
+					"path": [
+						"api",
+						"v1",
+						"atleti",
+						"cerca",
+						"codice",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Atleti Test",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6ImZpbGlwcG8uYWxiZXJ0aW5pIiwicm9sZSI6IlVTRVIiLCJuYmYiOjE2MDgwNzA4MzQsImV4cCI6MTYwODA3MjAzNCwiaWF0IjoxNjA4MDcwODM0fQ.MlbF5Zbw2N9X8IrACb28Rtrk-0hATlVRifJv7LYE-fw",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:52288/api/v1/atleti/test",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "52288",
+					"path": [
+						"api",
+						"v1",
+						"atleti",
+						"test"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
